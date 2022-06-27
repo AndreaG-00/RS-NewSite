@@ -261,16 +261,32 @@ p{
 /* Footer */
 
 .footer{
-  background: #010e30;
-  padding: 150px 0;
+  background: #333;
+  padding:40px;
+  color:#fff; 
+  margin-top: 40px
 }
 
 
 
+/* clearfix */
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+
 *,
 *:before,
-*:after{
+*:after {
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
 }
